@@ -31,8 +31,8 @@ set expandtab
 set shiftwidth=3
 set softtabstop=3
 
-" Disable auto indent
-filetype indent off
+" Enable auto indent
+filetype indent on
 
 " In file search settings, if uppercase letters is used,
 " the search is case sensitive.
@@ -58,5 +58,5 @@ let g:qf_mapping_ack_style = 1
 set statusline+=%{gutentags#statusline()}
 "" Specifies that the root of the project is where a .gutctags file is found.
 "" Make sure to put this at the root of every project!
-let g:gutentags_project_root = ['.gutctags']
+let g:gutentags_project_root = ['gutctags']
 let g:gutentags_add_default_project_roots = 0
